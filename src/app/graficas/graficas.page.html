@@ -1,0 +1,53 @@
+<ion-header mode="ios">
+  <ion-toolbar mode="ios" color="primary">
+    <ion-title color="secondary">Gráficas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="primary">
+  <ion-grid>
+  <ion-row>
+  <ion-col size-md="12" size-lg="6">
+    <ion-card mode="ios" class="animated pulse">
+      <ion-card-header text-center>
+        <h1>Grafica 1</h1>
+      </ion-card-header>
+      <ion-card-content>
+        <canvas #pieCanvas></canvas>
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+  <ion-col size-md="12" size-lg="6">
+    <ion-card mode="ios" class="animated pulse">
+      <ion-card-header text-center>
+        <h1>Ventas por mes</h1>
+      </ion-card-header>
+      <ion-card-content>
+        <canvas #lineCanvas ></canvas>
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+  <ion-col size-md="12" size-lg="6">
+    <ion-card mode="ios" class="animated pulse">
+      <ion-card-header text-center>
+        <h1>Tipos de Gastos</h1>
+      </ion-card-header>
+      <ion-card-content>
+        <canvas #doughnutCanvas></canvas>
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+  <ion-col size-md="12" size-lg="6">
+    <ion-card mode="ios" class="animated pulse">
+      <ion-card-header text-center>
+        <h1>Productos mas Vendidos</h1>
+      </ion-card-header>
+      <ion-card-content>
+        <canvas #barCanvas></canvas>
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+  </ion-row>
+  </ion-grid>
+
+</ion-content>

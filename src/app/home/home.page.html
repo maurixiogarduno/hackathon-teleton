@@ -1,0 +1,31 @@
+<ion-header mode="ios">
+  <ion-toolbar mode="ios" color="primary">
+    <ion-title color="secondary">Teletón 2018</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="primary">
+
+  <div text-center class="animated tada infinite"><img src="../../assets/img/marrano.svg" height="256" width="256"></div>
+
+  <ion-card mode="ios" color="secondary" class="animated pulse infinite">
+      <ion-card-header>
+          <ion-card-title text-center>Dinero Donado</ion-card-title>
+          <h2 text-center *ngIf="dinero">$ {{ dinero }}</h2>
+      </ion-card-header>
+  </ion-card>
+
+  <h1 text-center class="animated pulse infinite"><countdown-timer [end]="'2018-10-8 00:00:00'"></countdown-timer></h1>
+  <h2 text-center>Tiempo Restante</h2>
+  <br>
+
+  <div text-center>
+    <ion-button href="/Cantidad" routerDirection="forward" mode="ios" color="secondary"><ion-icon name="md-arrow-round-forward"></ion-icon>DONAR CON TARJETA</ion-button>
+  </div>
+
+  <div text-center>
+    <ion-button mode="ios" color="secondary" (click)="updateDinero()">Aumento</ion-button>
+  </div>
+  <br>
+
+</ion-content>

@@ -1,0 +1,81 @@
+<ion-header mode="ios">
+  <ion-toolbar mode="ios" color="primary">
+    <ion-title color="secondary">Cantidad</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="primary">
+
+  <ion-button href="/tabs/(home:home)" routerDirection="back" mode="ios" color="secondary" expand="full"><ion-icon name="md-arrow-round-back"></ion-icon>REGRESAR</ion-button>
+
+  <!-- QR de Págo -->
+  <!-- <qrcode [qrdata]="'Your QR code data string'" [size]="256" [level]="'M'"></qrcode> -->
+    <!-- <ion-row>
+      <ion-col size="6">
+        <div text-center>
+          <ngx-qrcode [qrc-value]="qrCode"></ngx-qrcode> -->
+          <!-- <qrcode [qrdata]="'Your QR code data string'" [size]="256" [level]="'M'"></qrcode> -->
+        <!-- </div>
+      </ion-col>
+      <ion-col size="6">
+        <h3>Págo De:</h3>
+        <div text-left class="animated zoomIn" *ngIf="createdCode">
+          <a style="font-weight: bold; font-size: 32px; color:#616161;">${{ createdCode }}</a>
+        </div>
+      </ion-col>
+    </ion-row> -->
+
+    <div text-center class="animated zoomIn" *ngIf="createdCode">
+      <h3>Donación de:</h3>
+      <a style="font-weight: bold; font-size: 56px; color:#ffd348;">${{ createdCode }}</a>
+    </div>
+
+    <br>
+
+    <!-- Teclado de pago -->
+    <ion-row>
+      <ion-col size="4">
+        <ion-button mode="ios" color="light" expand="block" (click)="oneButton()">1</ion-button>
+      </ion-col>
+      <ion-col size="4">
+        <ion-button mode="ios" color="light" expand="block" (click)="twoButton()">2</ion-button>
+      </ion-col>
+      <ion-col size="4">
+        <ion-button mode="ios" color="light" expand="block" (click)="threeButton()">3</ion-button>
+      </ion-col>
+      <ion-col size="4">
+        <ion-button mode="ios" color="light" expand="block" (click)="fourButton()">4</ion-button>
+      </ion-col>
+      <ion-col size="4">
+        <ion-button mode="ios" color="light" expand="block" (click)="fiveButton()">5</ion-button>
+      </ion-col>
+      <ion-col size="4">
+        <ion-button mode="ios" color="light" expand="block" (click)="sixButton()">6</ion-button>
+      </ion-col>
+      <ion-col size="4">
+        <ion-button mode="ios" color="light" expand="block" (click)="sevenButton()">7</ion-button>
+      </ion-col>
+      <ion-col size="4">
+        <ion-button mode="ios" color="light" expand="block" (click)="eightButton()">8</ion-button>
+      </ion-col>
+      <ion-col size="4">
+        <ion-button mode="ios" color="light" expand="block" (click)="nineButton()">9</ion-button>
+      </ion-col>
+      <ion-col size="4">
+        <ion-button mode="ios" color="secondary" expand="block"><ion-icon name="barcode"></ion-icon></ion-button>
+      </ion-col>
+      <ion-col size="4">
+        <ion-button mode="ios" color="light" expand="block" (click)="zeroButton()">0</ion-button>
+      </ion-col>
+      <ion-col size="4">
+        <ion-button mode="ios" color="danger" expand="block" (click)="cleanButton()"><ion-icon name="close"></ion-icon></ion-button>
+      </ion-col>
+    </ion-row>
+
+    <br>
+
+    <div text-center>
+      <ion-button href="/Pago" routerDirection="forward" mode="ios" color="secondary"><ion-icon name="md-arrow-round-forward"></ion-icon>CONTINUAR</ion-button>
+    </div>
+
+</ion-content>
